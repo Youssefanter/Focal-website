@@ -1,0 +1,79 @@
+body {
+  height: 400vh;
+}
+nav i {
+  color: white;
+}
+nav .ri-shopping-bag-2-line::after {
+  content: "0";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  top: 0;
+  right: -7px;
+  color: black;
+  font-size: 8px;
+}
+
+.one {
+  background-image: url(../Imgs/heritage-lp-3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.two {
+  background-image: url(../Imgs/sage1-desktop.jpg),
+    url(../Imgs/sage2-desktop.jpg);
+  background-position: left center, right center;
+  background-size: 50% 100%, 50% 100%;
+  background-repeat: no-repeat;
+}
+.three {
+  background-image: url(../Imgs/tom-dixon-lp-tile-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.four {
+  background-image: url(../Imgs/jump1-desktop.jpg),
+    url(../Imgs/jump2-desktop.jpg);
+  background-position: left center, right center;
+  background-size: 50% 100%, 50% 100%;
+  background-repeat: no-repeat;
+}
+.five {
+  background-image: url(../Imgs/mk-lp-tile-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 480px) {
+  .one {
+    background-image: url(../Imgs/heritage-lp-3-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  animation: slide-up 0.5s ease-out forwards;
+}

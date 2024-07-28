@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Landing Page</title>
+  <link rel="stylesheet" href="./styles/tailwind.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./node_modules/remixicon/fonts/remixicon.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- Start Header -->
+  <header class="font-ubu sticky top-0 z-10">
+    <nav class=" bg-navGrey min-h-20 items-center flex ">
+      <div class="container mx-auto ">
+        <div class="flex items-center justify-between ">
+          <div class="pt-2 order-2 md:order-1">
+            <img class="max-w-28 ml-4" src="./Imgs/logo.png" alt="Logo">
+          </div>
+          <div class="order-2 hidden md:flex space-x-6 text-white">
+            <a class="capitalize
+            relative
+            cursor-pointer
+            transition-all
+            duration-200
+            before:content-['']
+            before:absolute
+            before:-bottom-2
+            before:left-0
+            before:w-0
+            before:h-0.5
+            before:transition-all
+            before:duration-300
+            before:bg-white
+            hover:before:w-full" href="">Shop by Category</a>
+            <a class="capitalize
+            relative
+            cursor-pointer
+            transition-all
+            duration-200
+            before:content-['']
+            before:absolute
+            before:-bottom-2
+            before:left-0
+            before:w-0
+            before:h-0.5
+            before:transition-all
+            before:duration-300
+            before:bg-white
+            hover:before:w-full" href="">Shop by device</a>
+            <a class="capitalize
+            relative
+            cursor-pointer
+            transition-all
+            duration-200
+            before:content-['']
+            before:absolute
+            before:-bottom-2
+            before:left-0
+            before:w-0
+            before:h-0.5
+            before:transition-all
+            before:duration-300
+            before:bg-white
+            hover:before:w-full" href="">Collections</a>
+            <a class="capitalize
+            relative
+            cursor-pointer
+            transition-all
+            duration-200
+            before:content-['']
+            before:absolute
+            before:-bottom-2
+            before:left-0
+            before:w-0
+            before:h-0.5
+            before:transition-all
+            before:duration-300
+            before:bg-white
+            hover:before:w-full" href="">Blog</a>
+          </div>
+          <div class=" flex space-x-6 text-2xl order-3">
+            <i class="ri-mail-line"></i>
+            <i class="ri-search-line hidden md:block"></i>
+            <i class="ri-user-line"></i>
+            <i class="ri-shopping-bag-2-line relative"></i>
+          </div>
+          <div class="order-1 md:hidden text-2xl space-x-6">
+            <i class="ri-menu-line"></i>
+            <i class="ri-search-line"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End Header -->
+
+  <!-- Start Swiper -->
+  <div class="swiper h-[50vh] md:h-[80vh]"">
+    <div class=" swiper-wrapper">
+    <div class="swiper-slide one">
+      <div class="absolute ml-[1.5rem] mt-[6rem] md:ml-[6rem] md:mt-[6rem]">
+        <p class="text-white uppercase text-sm font-bold mb-10 hidden paragraph">Premium collection</p>
+        <h2 class="text-white text-[3rem] md:text-[4.5rem] font-bold uppercase leading-[4rem] hidden paragraph">The
+          heritage
+          <br>collection
+        </h2>
+        <div class="buttons-holder mt-7 hidden paragraph">
+          <button
+            class="bg-yellowButton px-14 py-4 mr-4 font-semibold tracking-widest uppercase text-xs relative overflow-hidden before:absolute before:top-full before:left-0 before:w-full before:h-full before:bg-hoverYellowButton before:transition-[top] before:z-0 hover:before:top-0"><span
+              class="relative z-[1]">Learn
+              more</span></button>
+          <button
+            class="bg-yellowButton px-14 py-4 ml-4 font-semibold tracking-widest uppercase text-xs relative overflow-hidden before:absolute before:top-full before:left-0 before:w-full before:h-full before:bg-hoverYellowButton before:transition-[top] before:z-0 hover:before:top-0"><span
+              class="relative z-[1]">Shop</span></button>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide two">
+      <p>Meet the</p>
+      <h2>Sage collection</h2>
+      <button>Learn more</button>
+    </div>
+    <div class="swiper-slide three">
+      <p>Meet the</p>
+      <h2>Sage collection</h2>
+      <button>Learn more</button>
+    </div>
+    <div class="swiper-slide four">
+      <p>Premium collection</p>
+      <h2>The heritage collection</h2>
+      <button>Learn more</button>
+    </div>
+    <div class="swiper-slide five">
+      <p>Premium collection</p>
+      <h2>The heritage collection</h2>
+      <button>Learn more</button>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+  </div>
+  <!-- End Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
