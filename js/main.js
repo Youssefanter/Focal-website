@@ -1,7 +1,18 @@
 const swiper = new Swiper(".swiper", {
-  // autoplay: {
-  //   delay: 2000,
-  // },
+  grabCursor: true,
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      shadow: true,
+      translate: ["-20%", 0, -1],
+    },
+    next: {
+      translate: ["100%", 0, 0],
+    },
+  },
+  autoplay: {
+    delay: 2000,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
