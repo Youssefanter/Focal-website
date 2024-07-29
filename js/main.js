@@ -1,4 +1,7 @@
 const swiper = new Swiper(".swiper", {
+  // autoplay: {
+  //   delay: 2000,
+  // },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -7,6 +10,7 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+
   on: {
     slideChange: function () {
       const paragraphs = document.querySelectorAll(".paragraph");
